@@ -1,0 +1,17 @@
+.user_card_info {
+  display: flex;
+  flex-direction: column;
+  .user_card_info_username {
+    font-weight: bold;
+    font-size: large;
+    color: var(--color-primary);
+  }
+  .user_card_info_fullname {
+    font-size: medium;
+    color: var(--color-second);
+  }
+}
+
+.user_card_container:hover {
+  background-color: var(--color-hover-input);
+}

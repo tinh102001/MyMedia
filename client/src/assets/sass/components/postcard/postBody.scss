@@ -1,0 +1,23 @@
+.post-body {
+  padding: 0;
+  .post-content {
+    max-width: 100%;
+    padding: 4px 16px 16px;
+  }
+  .post-images {
+    .carousel {
+      height: 100%;
+      .carousel-inner {
+        height: 100%;
+      }
+    }
+    .carousel-item {
+      height: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

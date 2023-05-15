@@ -1,0 +1,17 @@
+.modal-confirm {
+  .modal-content {
+    background-color: var(--background-color-second);
+    .modal-header {
+      border-bottom: 1px solid var(--color-hover-input);
+      .modal-title {
+        color: var(--color-primary);
+      }
+    }
+    .modal-body {
+      color: var(--color-primary);
+    }
+    .modal-footer {
+      border-top: 1px solid var(--color-hover-input);
+    }
+  }
+}

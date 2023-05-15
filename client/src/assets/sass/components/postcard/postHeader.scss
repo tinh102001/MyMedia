@@ -1,0 +1,64 @@
+.card-header {
+  padding: 12px 16px;
+  .header-container {
+    gap: 1em;
+    .avatar-container {
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+    .avatar-container:hover {
+      cursor: pointer;
+    }
+    .content.flex-grow-1 {
+      display: flex;
+      flex-direction: column;
+      .user-name {
+        color: var(--color-primary);
+        font-size: 16px;
+        font-weight: 600;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      .post-time {
+        color: var(--color-second);
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    .option-post {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        path {
+          fill: var(--color-second);
+        }
+      }
+    }
+    .dropdown-menu {
+      color: var(--color-primary);
+      background-color: var(--background-color-second);
+      a {
+        color: var(--color-primary) !important;
+        &:hover {
+          background-color: var(--background-color-third);
+        }
+      }
+    }
+    .option-post:hover {
+      background: var(--background-color-primary);
+      cursor: pointer;
+    }
+    #post-toggle::after {
+      display: none;
+    }
+  }
+}

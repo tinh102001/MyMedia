@@ -1,0 +1,34 @@
+.user-suggest {
+  max-width: 260px;
+  margin: auto;
+  margin-top: 24px;
+  .header-suggest {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    .title {
+      color: #737373;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .see-all {
+      color: var(--color-primary);
+      font-size: 14px;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+  .content-suggest {
+    .suggest-user {
+      padding: 0 0 8px;
+      font-family: "Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif";
+      .user-name {
+        color: var(--color-primary);
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}

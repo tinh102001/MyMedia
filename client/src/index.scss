@@ -1,0 +1,35 @@
+@import "./assets/sass/react.style.scss";
+
+:root {
+  --background-color-primary: #f0f2f5;
+  --background-color-second: #ffffff;
+  --background-color-third: #f0f2f5;
+  --color-hover-input: #e4e6e9;
+  --color-active-input: #e7f3ff;
+  --color-primary: #050505;
+  --color-second: #65676b;
+  // --color-border: #e4e6eb;
+  --font-size-primary: 16px;
+  --border-radius-primary: 16px;
+}
+
+[data-theme="dark"] {
+  --background-color-primary: #18191a;
+  --background-color-second: #242526;
+  --background-color-third: #3a3b3c;
+  --color-hover-input: #4e4f50;
+  --color-active-input: #263950;
+  --color-primary: #e4e6eb;
+  --color-second: #b0b3b8;
+}
+
+
+body {
+  font-family: "Quicksand", serif !important;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}

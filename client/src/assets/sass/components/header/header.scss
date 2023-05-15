@@ -1,0 +1,211 @@
+.header {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: var(--background-color-second);
+  z-index: 2;
+  box-shadow: var(--color-hover-input) 0px 0px 0px,
+    var(--color-hover-input) 0px 2px 4px;
+  padding: 0 20px;
+  .logo {
+    left: 50px;
+    display: flex;
+    flex: 1;
+    margin-left: 10px;
+  }
+
+  .search-form {
+    position: relative;
+    flex: 5;
+    display: block;
+    width: 50%;
+    margin: 50px 0 50px 0.3rem;
+    .search_input {
+      width: 60%;
+      display: flex;
+      .form-control {
+        background: var(--background-color-third);
+        color: var(--color-primary);
+        // border: 1px solid #ddd;
+        border: none;
+        border-radius: 20px;
+        width: 100%;
+        outline: none;
+        text-indent: 5px;
+        &:hover,
+        &:focus,
+        &:active {
+          background: var(--color-hover-input);
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      .search_loader {
+        position: absolute;
+        margin-top: 0.5rem;
+        right: 41%;
+      }
+    }
+    .users_search_result {
+      position: absolute;
+      width: 60%;
+      min-width: 250px;
+      background: var(--background-color-second);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      max-height: calc(100vh - 150px);
+      overflow: auto;
+      margin-top: 3px;
+      border-radius: 10px;
+    }
+  }
+
+  .menu {
+    flex: 1;
+    position: relative;
+    display: flex;
+    float: right;
+    .container-menu {
+      position: relative;
+      display: flex;
+      width: 45px;
+      height: 45px;
+      align-items: center;
+      margin: 0.3rem;
+      .profile {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+      }
+      .menu-profile {
+        position: absolute;
+        top: 95%;
+        right: 10px;
+        background-color: var(--background-color-second);
+        color: var(--color-primary);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 5%;
+        z-index: 999;
+        .ant-menu-item:hover {
+          background-color: var(--color-hover-input);
+          color: var(--color-primary);
+        }
+      }
+      .profile:hover {
+        cursor: pointer;
+        border: solid 2px #f1f1f1;
+      }
+    }
+    .btn-notification,
+    .btn-message,
+    .btn-discover {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin: 0.3rem;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 0;
+      background-color: var(--background-color-third);
+      justify-content: center;
+      svg {
+        fill: var(--color-primary);
+      }
+      .explore-icon {
+        // SVG
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      .messenger-icon {
+        // SVG
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+    }
+
+    .btn-notification:hover,
+    .btn-message:hover,
+    .btn-discover:hover {
+      background-color: var(--color-hover-input);
+    }
+    .btn-discover.active,
+    .btn-message.active,
+    .btn-notification.active {
+      background-color: var(--color-active-input);
+      svg {
+        fill: hsl(214, 89%, 52%);
+      }
+    }
+    .btn-notification {
+      .notify-number {
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        background: #e41e3f;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -4px;
+        right: -4px;
+        position: absolute;
+        font-size: 12px;
+      }
+    }
+  }
+  .back-form {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    .modal-form {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+    .container-logout {
+      position: relative;
+      display: block;
+      width: 300px;
+      height: 120px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      .form-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          flex: 1;
+          width: 30px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .search-form {
+      .search_input {
+        width: 100%;
+        .search_loader {
+          right: 10%;
+        }
+      }
+    }
+  }
+}

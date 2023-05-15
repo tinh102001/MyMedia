@@ -1,0 +1,36 @@
+@import "./general.scss";
+
+@import "avatar/avatar.scss";
+
+@import "comment/index.scss";
+@import "comment/inputComment.scss";
+
+@import "header/header.scss";
+
+@import "home/home.scss";
+
+@import "info/info.scss";
+@import "info/editProfile.scss";
+
+@import "loading/loading.scss";
+
+@import "message/Call.scss";
+@import "message/MessageLeft.scss";
+@import "message/MessageRight.scss";
+
+@import "notification/notification.scss";
+
+@import "postcard/index.scss";
+
+@import "postgallery/postGallery.scss";
+
+@import "status/createPostModal.scss";
+@import "status/status.scss";
+
+@import "usercard/UserCardListMessage.scss";
+@import "usercard/UserCardMessage.scss";
+@import "usercard/UserCard.scss";
+
+@import "usersuggest/index.scss";
+
+@import "modal-confirm/modalConfirm.scss";

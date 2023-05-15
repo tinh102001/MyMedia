@@ -1,0 +1,10 @@
+.animation-auth {
+  .d-inline-block {
+    & svg:nth-child(2) {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    display: none;
+  }
+}
